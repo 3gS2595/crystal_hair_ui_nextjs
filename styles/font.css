@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "ＭＳ Ｐゴシック";
+    src: url(../public/MSGOTHIC.TTF) format("truetype")
+}
+
+* {
+    font-family: "ＭＳ Ｐゴシック";
+    font-weight: 1!important;
+    font-size: 1.14rem;
+}
+
+#sidebar a {
+    font-size: .84424rem;
+
+}
+
+#pagination button {
+    font-size: .829355rem;
+}
+
+#title {
+    font-size: 0.84424rem;
+}
+
+#names {
+    font-size: 0.84424rem;
+}
+
+#url {
+    font-size: .84424rem;
+
+}
+
+#date {
+    font-size: .81444rem;
+}
+#count {
+    font-size: .81444rem;
+}
+
+th {
+    /* border-left: 1px solid lightgray; */
+    text-align: left;
+    font-size: .84424rem;
+}
+
+table {
+    font-size: .9rem;
+}
+
+.react-tabs__tab {
+    font-size: .86532rem;
+}
+
+.react-tabs #dm {
+    font-weight: 1;
+
+    font-size: .86532rem;
+}
+
+@media (max-width:614px) {
+    * {
+        font-size: 1rem;
+    }
+    
+}
