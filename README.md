@@ -1,9 +1,6 @@
-ZERO harcode policy refactor
-	three.js
-	site sidebar
-	files
+TODO
 
-X---- congeal file and rss together, with addition of filtering content types by tags
+congeal file and rss together, with addition of filtering content types by tags
 
 three.js refactor
 	remove wheel integrate as animated grid (icon shape map, click grid)
