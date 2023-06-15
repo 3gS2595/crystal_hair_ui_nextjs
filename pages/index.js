@@ -3,10 +3,11 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { atom, useAtom } from 'jotai'
 import { filt, tabi } from "./_app";
 
-import Interface from "../components/interface/interface.js";
 import DarkModeToggle from "../components/darkMode/darkMode.js";
 import { Table } from "../components/tables/table.js"
 import Info from "../components/info.js";
+import Side from "../components/interface/side";
+import Threejs from "../components/interface/threejs";
 
 import { fileColumns } from '../components/tables/columns/fileColumns'
 import { rssColumns } from '../components/tables/columns/rssColumns'
@@ -52,7 +53,14 @@ export default function Index() {
                 </TabList>
             </div>
 
-            <Interface />
+            <div id="interface">
+                <div id="split">
+                    <Side />
+                </div>
+                <div id="root">
+                    <Threejs />
+				</div>
+            </div>
 
             <TabPanel >
                 <div id="p">
