@@ -20,10 +20,10 @@ tr{
   overflow: hidden;
 }
 
-#carrier{
+#subTableIndex{
   display: flex;
 }
-#sp{
+#subTable{
   width:445px;
   display: flex;
 }
@@ -83,15 +83,11 @@ tfoot .th {
 }
 
 #pagination button {
-  outline: none;
-  box-shadow: none;
   margin-right: 21.6px ;
 
 }
 
 table button:focus {
-  outline: none;
-  box-shadow: none;
 
 }
 
@@ -103,8 +99,6 @@ table button:focus {
   align-items: stretch ;
   flex-wrap: wrap ;
   padding: 3px ;
-  box-shadow: 0 0 0px 0 rgb(0 0 0 / 10%) ;
-  border-top: 0px solid rgba(0, 0, 0) ;
  }
 
 .resizer {
@@ -138,7 +132,7 @@ tr#fill{
 
 
 
-#p {
+#tableIndex {
   /* display: flex;
   width:96vw;
   justify-content: space-between; */
@@ -146,7 +140,7 @@ tr#fill{
   flex-direction: center;
   /* margin-right: 2vw; */
 }
-#child {
+#table {
   /* display: inline-block; */
   /* vertical-align: middle; */
   max-width: 9000px!important;
@@ -157,17 +151,17 @@ tr#fill{
   width:10px;
 }
 @media (max-width: 600px) {
-  #carrier{
+  #subTableIndex{
     display: block;
   }
-  #sp{
+  #subTable{
     min-width:100vw;
   }
-  #p {
+  #tableIndex {
     display: block;
     flex-direction: center;
   }
-  #child {
+  #table {
     display: inline-block;
     /* vertical-align: middle; */
     max-width: 9000px!important;

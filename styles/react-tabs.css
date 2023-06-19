@@ -1,18 +1,17 @@
 .react-tabs {
   -webkit-tap-highlight-color: transparent;
   margin-top: 11px;
-  /* max-width: 950px; */
+   width: 980px; 
 
 }
 
 .react-tabs__tab-list {
-  margin: 0 0 10px;
+  margin: 0 0 0px;
   padding: 0;
   width: 98vw;
-  max-width: 1000px;
+  max-width: 930px;
   margin-right: 3vw;
   height: auto;
-  position: absolute;
   top: 10px;
   left: 0;
 }

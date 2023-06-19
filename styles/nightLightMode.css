@@ -65,20 +65,12 @@ body.dark-mode {
 }
 
 .light-mode #pagination button{
-  color: #551a8b ;
-  background: hsla(0, 0%, 100%, 0) !important
 }
 .light-mode #pagination button:disabled {
-  color: rgb(85, 26, 139,.8) ;
-  background: transparent ;
 }
 .dark-mode #pagination button {
-  color: rgb(170, 229, 116) ;
-  background: transparent ;
 }
 .dark-mode #pagination button:disabled {
-  color: rgb(1, 21, 116,1) ;
-  background: transparent ;
 }
 
 /* #date.light-mode {
@@ -168,9 +160,8 @@ a:link {
   color: #551a8b ;
 }
 
-.dark-mode button {
-  background-color: transparent ;
-  border-style: none ;
+.dark-mode #dm {
+  border-style: none !important;
   color: #fff !important
 }
 
@@ -179,7 +170,7 @@ a:link {
   color: #000
 }
 
-.light-mode button {
+.light-mode #dm {
   border-style: none !important;
   background-color: hsla(0, 0%, 100%, 0) !important
 }

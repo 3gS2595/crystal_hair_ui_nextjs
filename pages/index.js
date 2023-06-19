@@ -3,11 +3,12 @@ import { atom, useAtom } from 'jotai'
 import { React, useEffect, useState } from 'react';
 import { useMemo } from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import DarkModeToggle from "../components/darkMode/darkMode.js";
 import { Table } from "../components/table/table.js"
 import Info from "../components/annex/annex.js";
 import Side from "../components/interface/side";
 import Board from "../components/interface/threejs/threeScene";
+import ThemeUpdate from '../components/darkMode/ThemeUpdate';
+import { css } from "@mui/material";
 
 import { fileColumns } from '../components/table/columns/fileColumns'
 import { rssColumns } from '../components/table/columns/rssColumns'
@@ -20,15 +21,14 @@ export default function Index() {
 	const [tabIndex, setTabIndex] = useAtom(tabi);
 	const [filter, setFilter] = useAtom(filt);
 	return (
-		<Tabs
-			selectedIndex={tabIndex}
+		<Tabs selectedIndex={tabIndex}
 			forceRenderTabPanel={true}
 			onSelect={(index) => handleSelect(index)}
 		>
 
 			<div dir='ltr'>
 				<TabList>
-					<DarkModeToggle />
+					<ThemeUpdate />
 					<Tab eventkey={0}>rss</Tab>
 					<Tab eventkey={1}>obj</Tab>
 					<Tab eventkey={2}>annex</Tab>
@@ -36,8 +36,8 @@ export default function Index() {
 			</div>
 
 			<div id="interface">
-				<Board/>	
 				<SiteDirectory/>
+				<Board/>	
 			</div>
 
 			<TabPanel>
