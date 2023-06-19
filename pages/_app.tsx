@@ -4,7 +4,6 @@ import PageProvider from "../components/pageProvider";
 import "../styles/globals.css";
 import "../styles/react-table.css";
 import "../styles/interface.css";
-import "../styles/nightLightMode.css";
 import '../styles/react-tabs.css';
 import '../styles/font.css';
 
