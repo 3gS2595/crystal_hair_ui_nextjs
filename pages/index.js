@@ -3,12 +3,11 @@ import { atom, useAtom } from 'jotai'
 import { React, useEffect, useState } from 'react';
 import { useMemo } from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { Table } from "../components/table/table.js"
+import TableMod from "../components/table/table.tsx"
 import Info from "../components/annex/annex.js";
 import Side from "../components/interface/side";
 import Board from "../components/interface/threejs/threeScene";
 import ThemeUpdate from '../components/darkMode/ThemeUpdate';
-import { css } from "@mui/material";
 
 import { fileColumns } from '../components/table/columns/fileColumns'
 import { rssColumns } from '../components/table/columns/rssColumns'
@@ -36,8 +35,8 @@ export default function Index() {
 			</div>
 
 			<div id="interface">
-				<SiteDirectory/>
 				<Board/>	
+				<SiteDirectory/>
 			</div>
 
 			<TabPanel>
@@ -76,14 +75,14 @@ const RssTableindex = () => {
 	}, []);
 	return(
 		<div id="tableindex">
-			<Table length={31} columns={rssColumns} data={rssData} />
+			<TableMod len={31} columns={rssColumns} data={rssData} />
 			<div id="subTableIndex">
 				<div id="subTable">
-					<Table length={10} columns={sitesColumns} data={siteData} />
+					<TableMod len={10} columns={sitesColumns} data={siteData} />
 				</div>
 				<div id="seperate"/>
 				<div id="subTable">
-					<Table length={10} columns={namesColumns} data={nameData} />
+					<TableMod len={10} columns={namesColumns} data={nameData} />
 				</div>
 			</div>
 		</div>
@@ -99,7 +98,7 @@ const ObjTableindex = () => {
 	}, []);
 	return(
 		<div id="tableindex">
-					<Table length={47} columns={fileColumns} data={fileData} />
+					<TableMod len={47} columns={fileColumns} data={fileData} />
 		</div>
 	)
 }
