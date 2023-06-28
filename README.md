@@ -1,3 +1,5 @@
+NIXT in favor of pursuing vue based ui.
+
 TODO
 
 congeal file and rss together, with addition of filtering content types by tags
