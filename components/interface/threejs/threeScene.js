@@ -6,7 +6,7 @@ import { InteractionManager } from 'three.interactive';
 
 
 var interactionManager;
-const Board = () => {
+export const ThreeScene = () => {
 
 	const mountRef = useRef();
 	const sceneRef = useRef();
@@ -16,11 +16,9 @@ const Board = () => {
 	const height = 300;
 	
 	const forms = [];
-	const apiList = '';
 	const loadFlag = [false, false, false];
-	var curFilt = '';
 
-	const [tabIndex, setTabIndex] = useAtom(tabi);
+	console.log('starting');
 	const [filter, setFilter] = useAtom(filt);
 
 	useEffect(() => {
@@ -80,9 +78,9 @@ const Board = () => {
 
 		fetch( 'http://192.168.1.180:3000//site_images.json').then(res => res.json())
 		.then(data => {
-			apiList = (data);
+			const apiList = (data);
 			console.log('loading');
-			let gridx = -40;
+			let gridx = -55;
 			let gridy = 16;
 			let gridxI = 10.85; //x axis iterative distance
 			for (let i = 0, j = apiList.length; i < j; i++) {
@@ -142,4 +140,3 @@ const Board = () => {
 	return <div id="threeJsTable" ref={mountRef}></div>;
 };
 
-export default Board;

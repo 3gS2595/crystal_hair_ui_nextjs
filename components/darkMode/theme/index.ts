@@ -22,13 +22,21 @@ export const globalStyles = css`
       background-color: #fff;
       color: #333;
     }
+
 .ReactTable .rt-tbody .rt-tr-group {
   border-bottom: .51px solid rgba(128, 0, 128, .34) !important
 }
-.ReactTable .rt-tbody .rt-td {
-  border-right: 1px solid rgba(0, 0, 255, .14) !important
+div {
+  border: 1px solid rgba(255, 99, 71, .14) !important;
 }
-.ReactTable .rt-thead .rt-td.-sort-desc,
+td {
+  border-left: 1px solid rgba(0, 0, 255, .14) !important;
+  border-right: 1px solid rgba(0, 0, 255, .14) !important;
+  border-bottom: 1px solid rgba(0, 0, 255, .14) !important;
+}
+tbody {
+  border-left: 1px solid rgba(0, 0, 255, .14) !important;
+},
  .ReactTable .rt-thead .rt-th.-sort-desc {
   box-shadow: inset 0 -1.2px 0 0 #b8bd19 !important
 }
